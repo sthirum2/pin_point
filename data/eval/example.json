@@ -1,0 +1,14 @@
+[
+  {
+    "query": "bicycle kick goal",
+    "relevant_ids": ["match_01_042", "match_01_087"]
+  },
+  {
+    "query": "goalkeeper dives to save penalty",
+    "relevant_ids": ["match_01_015", "match_01_063"]
+  },
+  {
+    "query": "offside flag decision",
+    "relevant_ids": ["match_01_031"]
+  }
+]
