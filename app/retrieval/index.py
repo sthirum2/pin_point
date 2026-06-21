@@ -29,6 +29,11 @@ class SegmentIndex:
         self._index.add(matrix)
         self._segments = list(segments)
 
+    @property
+    def segments(self) -> list[Segment]:
+        """Return a copy of the indexed segments in build order."""
+        return list(self._segments)
+
     # ── query ────────────────────────────────────────────────────────────────
 
     def query(self, query_vec: np.ndarray, k: int = 10) -> list[SearchResult]:

@@ -8,4 +8,5 @@ assemblyai
 faiss-cpu
 sentence-transformers
 numpy
+gradio
 pytest
