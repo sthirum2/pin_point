@@ -7,6 +7,7 @@ from app.models import SearchResult
 from app.retrieval.index import SegmentIndex
 from app.retrieval.loader import get_embed_fn, get_index, get_reranker
 from app.retrieval.rerank import CrossEncoderReranker
+from app.telemetry import log_retrieval
 
 app = FastAPI(title="Video Search API")
 
@@ -36,6 +37,8 @@ def search(
 
     if rerank:
         results = reranker(results, q)
+
+    log_retrieval(q, results, reranked=rerank, k=k)
 
     return [
         {

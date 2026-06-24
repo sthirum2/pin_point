@@ -7,6 +7,7 @@ from app.eval.metrics import mrr as _mrr
 from app.eval.metrics import ndcg_at_k, recall_at_k
 from app.models import SearchResult
 from app.retrieval.index import SegmentIndex
+from app.telemetry import log_retrieval
 
 type EmbedFn = Callable[[str], np.ndarray]
 type RerankerFn = Callable[[list[SearchResult], str], list[SearchResult]]
@@ -44,6 +45,8 @@ def evaluate(
 
         if reranker is not None:
             results = reranker(results, query)
+
+        log_retrieval(query, results, reranked=reranker is not None, k=max_k)
 
         retrieved_ids = [r.segment.id for r in results]
 
