@@ -1,0 +1,20 @@
+[
+  { "query": "why is smoke from Canadian wildfires reaching the US", "relevant_ids": ["wildfires_3"] },
+  { "query": "what weather systems are channeling the smoke", "relevant_ids": ["wildfires_3"] },
+  { "query": "what makes the air quality harmful", "relevant_ids": ["wildfires_5"] },
+  { "query": "what is particulate matter", "relevant_ids": ["wildfires_5"] },
+  { "query": "how does air pollution affect the lungs and brain", "relevant_ids": ["wildfires_5"] },
+  { "query": "how concentrated is the particulate matter compared to normal", "relevant_ids": ["wildfires_7"] },
+  { "query": "who is most vulnerable to poor air quality", "relevant_ids": ["wildfires_8", "wildfires_9"] },
+  { "query": "are children at risk from wildfire smoke", "relevant_ids": ["wildfires_9"] },
+  { "query": "are elderly people more at risk from air pollution", "relevant_ids": ["wildfires_9"] },
+  { "query": "will the air quality get worse", "relevant_ids": ["wildfires_11"] },
+  { "query": "which areas have the highest smoke concentrations", "relevant_ids": ["wildfires_11"] },
+  { "query": "how long will the wildfire smoke last", "relevant_ids": ["wildfires_15"] },
+  { "query": "what will cause the smoke to move away from the region", "relevant_ids": ["wildfires_15"] },
+  { "query": "will climate change cause more wildfires in the future", "relevant_ids": ["wildfires_17"] },
+  { "query": "is wildfire smoke a new problem for the eastern US", "relevant_ids": ["wildfires_17"] },
+  { "query": "who is the professor being interviewed", "relevant_ids": ["wildfires_0"] },
+  { "query": "what university is the professor from", "relevant_ids": ["wildfires_0", "wildfires_18"] },
+  { "query": "why are cities canceling outdoor activities", "relevant_ids": ["wildfires_8"] }
+]
