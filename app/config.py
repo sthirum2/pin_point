@@ -23,7 +23,7 @@ def _require(name: str) -> str:
 def get_settings() -> Settings:
     load_dotenv()
     return Settings(
-        twelve_labs_api_key=_require("TWELVE_LABS_API_KEY"),
+        twelve_labs_api_key=os.getenv("TWELVE_LABS_API_KEY", ""),
         assemblyai_api_key=_require("ASSEMBLYAI_API_KEY"),
-        mongodb_uri=_require("MONGODB_URI"),
+        mongodb_uri=os.getenv("MONGODB_URI", ""),
     )
